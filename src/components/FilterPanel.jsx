@@ -3,12 +3,7 @@ import { Card } from 'UI/Card';
 import { Stack } from 'UI/Stack';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectFilters } from 'store/filters/filter-selectors';
-import {
-    REMOVE_FILTER,
-    CLEAR_FILTER,
-    clearFilter,
-    removeFilter,
-} from 'store/filters/filter-actions';
+import { clearFilter, removeFilter } from 'store/filters/filter-actions';
 
 const FilterPanel = () => {
     const dispatch = useDispatch();
